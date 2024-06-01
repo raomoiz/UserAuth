@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    
+    <div class="form">
+    <h2>Login</h2>
+    <form method="POST" name="login" action="/login">
+        <label for="userEmail">UserEmail:</label>
+        <input type="text" id="userEmail" name="userEmail" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <span class="msg">{{msg}}</span>
+        <button type="submit">Login</button>
+    </form>
+    <a href="/register">Don't have an account? Register here</a>
+</div>
+
+   
+</body>
+</html>
